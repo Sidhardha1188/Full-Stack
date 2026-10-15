@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation and Fetch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <h1>Club Sign-up</h1>
+      <form id="signup" novalidate>
+        <label>Name <input id="name" type="text"></label>
+        <small class="err" data-for="name"></small>
+
+        <label>Roll number <input id="roll" type="text" placeholder="A24126552177"></label>
+        <small class="err" data-for="roll"></small>
+
+        <label>Email <input id="email" type="email"></label>
+        <small class="err" data-for="email"></small>
+
+        <label>Password <input id="password" type="password"></label>
+        <small class="err" data-for="password"></small>
+        <div class="strength"><span id="strengthBar"></span></div>
+
+        <button type="submit">Sign up</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h1>Latest Posts</h1>
+      <div class="row">
+        <input id="search" placeholder="Filter posts by title">
+        <button id="reload">Reload</button>
+      </div>
+      <p id="status"></p>
+      <ul id="posts"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

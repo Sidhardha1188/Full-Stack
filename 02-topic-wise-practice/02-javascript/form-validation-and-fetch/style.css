@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", sans-serif; background: #eef2f5; color: #222; }
+.wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 30px 5%; }
+.panel { background: #fff; padding: 20px 24px; border: 1px solid #d5dde3; }
+h1 { font-size: 1.4rem; margin-top: 0; color: #00575e; }
+label { display: block; margin-top: 12px; font-weight: 600; }
+input { display: block; width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #b8c4cc; font: inherit; }
+input.invalid { border-color: #c62828; background: #fff5f5; }
+input.valid { border-color: #2e7d32; }
+.err { color: #c62828; min-height: 1em; display: block; }
+.strength { height: 6px; background: #e0e0e0; margin-top: 6px; }
+.strength span { display: block; height: 100%; width: 0; transition: width 0.2s; }
+button { margin-top: 16px; padding: 9px 18px; background: #00575e; color: #fff; border: none; font: inherit; cursor: pointer; }
+.row { display: flex; gap: 8px; }
+.row input { margin: 0; }
+.row button { margin: 0; }
+#posts { padding-left: 18px; max-height: 420px; overflow-y: auto; }
+#posts li { margin-bottom: 10px; }
+#posts b { text-transform: capitalize; }
+@media (max-width: 760px) { .wrap { grid-template-columns: 1fr; } }

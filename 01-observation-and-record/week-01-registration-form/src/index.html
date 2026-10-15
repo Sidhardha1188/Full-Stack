@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form>
+    <table border='1'>
+      <tr>
+        <td>Name :</td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td>password :</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Phone Number :</td>
+        <td><input type="tel" name="phone"></td>
+      </tr>
+      <tr>
+        <td>Sex:</td>
+        <td>
+          <input type="radio" name="sex" value="male">Male
+          <br>
+          <input type="radio" name="sex" value="Female">Female
+        </td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td>
+          <select name="day">
+            <option>day</option>
+            <option>1</option>
+          </select>
+          <select name="month">
+            <option>Month</option>
+            <option>january</option>
+            <option>february</option>
+          </select>
+          <select name="year">
+            <option>year</option>
+            <option>2026</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Languages know:</td>
+        <td>
+          <input type="checkbox" name="english">English
+          <br>
+          <input type="checkbox" name="telugu">Telugu
+          <br>
+          <input type="checkbox" name="hindi">Hindi
+          <br>
+          <input type="checkbox" name="tamil">Tamil
+        </td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="4" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

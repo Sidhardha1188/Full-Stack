@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox, Positioning and Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Flexbox navbar -->
+  <nav class="navbar">
+    <span class="logo">FlexDemo</span>
+    <div class="links">
+      <a href="#flex">Flexbox</a>
+      <a href="#position">Position</a>
+      <a href="#media">Media</a>
+    </div>
+  </nav>
+
+  <div class="page">
+    <section id="flex">
+      <h2>Flexbox</h2>
+
+      <h3>Cards with equal height (flex-wrap + flex: 1)</h3>
+      <div class="cards">
+        <div class="card"><h4>Plan</h4><p>Short text.</p></div>
+        <div class="card"><h4>Design</h4><p>This card has a lot more text in it, but all the cards in the row still end up the same height because of flexbox.</p></div>
+        <div class="card"><h4>Build</h4><p>Medium length text here.</p></div>
+      </div>
+
+      <h3>order and align-self</h3>
+      <div class="order-demo">
+        <div class="item" style="order: 3">First in HTML, order 3</div>
+        <div class="item" style="order: 1">Second in HTML, order 1</div>
+        <div class="item self-end" style="order: 2">Third in HTML, order 2, align-self: flex-end</div>
+      </div>
+
+      <h3>Perfect centring</h3>
+      <div class="center-box"><div class="dot">centred</div></div>
+    </section>
+
+    <section id="position">
+      <h2>Positioning</h2>
+      <div class="photo-card">
+        <div class="photo"></div>
+        <span class="badge">NEW</span>
+        <p class="caption">The badge uses <code>position: absolute</code> inside a <code>position: relative</code> card.</p>
+      </div>
+
+      <div class="shift-row">
+        <div class="tile">static</div>
+        <div class="tile rel">relative, moved down 15px</div>
+        <div class="tile">static</div>
+      </div>
+
+      <div class="z-demo">
+        <div class="layer one">z-index 1</div>
+        <div class="layer two">z-index 3</div>
+        <div class="layer three">z-index 2</div>
+      </div>
+
+      <a href="#" class="back-top">Top &uarr;</a>
+    </section>
+
+    <section id="media">
+      <h2>iframe, audio and video</h2>
+      <div class="media-grid">
+        <div>
+          <h3>Embedded map (iframe)</h3>
+          <iframe src="https://www.google.com/maps?q=Rajahmundryhttps://en.wikipedia.org/wiki/Godavari_River" title="Godavari River on Wikipedia"amp;output=embed" title="Map of Rajahmundry" width="100%" height="260"></iframe>
+        </div>
+        <div>
+          <h3>Audio</h3>
+          <audio controls loop>
+            <source src="media/song.mp3" type="audio/mpeg">
+            <source src="media/song.ogg" type="audio/ogg">
+            Audio is not supported in this browser.
+          </audio>
+          <h3>Video</h3>
+          <video controls muted width="100%">
+            <source src="media/clip.mp4" type="video/mp4">
+            Video is not supported in this browser.
+          </video>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

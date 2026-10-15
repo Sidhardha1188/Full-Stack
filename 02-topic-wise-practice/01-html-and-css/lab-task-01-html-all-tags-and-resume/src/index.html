@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tags Reference</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Tags Reference Page</h1>
+    <nav>
+      <a href="#text">Text</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#media">Media</a> |
+      <a href="#table">Table</a> |
+      <a href="#form">Form</a> |
+      <a href="resume.html">My Resume</a>
+    </nav>
+  </header>
+  <hr>
+
+  <main>
+    <section id="text">
+      <h2>Text Tags</h2>
+      <p>A <b>b</b> tag, a <strong>strong</strong> tag, an <i>i</i> tag and an <em>em</em> tag.</p>
+      <p>Chemical formula of glucose: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>. Area of a square: a<sup>2</sup>.</p>
+      <p>Price: <del>Rs 999</del> <ins>Rs 499</ins> <mark>50% off</mark> <small>(limited offer)</small></p>
+      <p><abbr title="Anil Neerukonda Institute of Technology and Sciences">ANITS</abbr> is in Sangivalasa.</p>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save. The output was <samp>Hello World</samp>.</p>
+      <p>Variable <var>x</var> holds the value; use <code>let x = 10;</code> in JavaScript.</p>
+      <blockquote cite="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">
+        Dream is not that which you see while sleeping, it is something that does not let you sleep.
+      </blockquote>
+      <p>&mdash; <cite>A. P. J. Abdul Kalam</cite></p>
+      <address>
+        ANITS, Sangivalasa,<br>
+        Bheemunipatnam Mandal,<br>
+        Visakhapatnam, Andhra Pradesh
+      </address>
+      <p>The lab exam is on <time datetime="2026-11-20">20 November 2026</time>.</p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered (square bullets)</h3>
+      <ul style="list-style-type: square;">
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+      </ul>
+      <h3>Ordered starting from 5, lowercase letters</h3>
+      <ol type="a" start="5">
+        <li>Install Node.js</li>
+        <li>Create the project</li>
+        <li>Run npm install</li>
+      </ol>
+      <h3>Nested list</h3>
+      <ul>
+        <li>MERN
+          <ol>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>React</li>
+            <li>Node</li>
+          </ol>
+        </li>
+        <li>Tools
+          <ul>
+            <li>Git</li>
+            <li>Postman</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Description list</h3>
+      <dl>
+        <dt>Frontend</dt><dd>The part of the app the user sees.</dd>
+        <dt>Backend</dt><dd>The server that handles data and logic.</dd>
+      </dl>
+    </section>
+
+    <section id="media">
+      <h2>Image, figure and details</h2>
+      <figure>
+        <img src="sample.svg" alt="Simple drawing of a laptop" width="220" height="140">
+        <figcaption>Figure 1: An image inside a figure with a caption.</figcaption>
+      </figure>
+      <details>
+        <summary>Click to see more (details and summary tags)</summary>
+        <p>This text is hidden until the summary is clicked.</p>
+      </details>
+      <p>Progress: <progress value="70" max="100">70%</progress> Battery: <meter value="0.4">40%</meter></p>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Marks Sheet</caption>
+        <thead>
+          <tr><th rowspan="2">Subject</th><th colspan="2">Marks</th></tr>
+          <tr><th>Internal</th><th>External</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Full Stack Development</td><td>28</td><td>62</td></tr>
+          <tr><td>Operating Systems</td><td>25</td><td>58</td></tr>
+          <tr><td>Machine Learning</td><td>27</td><td>65</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total</td><td>80</td><td>185</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Feedback</legend>
+          <p><label>Name: <input type="text" name="name" required></label></p>
+          <p><label>Email: <input type="email" name="email"></label></p>
+          <p><label>Password: <input type="password" name="pwd" minlength="6"></label></p>
+          <p><label>Website: <input type="url" name="site" placeholder="https://"></label></p>
+          <p>Year:
+            <label><input type="radio" name="year" value="2"> II</label>
+            <label><input type="radio" name="year" value="3"> III</label>
+          </p>
+          <p>Interests:
+            <label><input type="checkbox" name="web"> Web</label>
+            <label><input type="checkbox" name="ml"> ML</label>
+          </p>
+          <p><label>Course:
+            <input list="courses" name="course">
+            <datalist id="courses">
+              <option value="CSE"></option>
+              <option value="CSM"></option>
+              <option value="ECE"></option>
+            </datalist>
+          </label></p>
+          <p><label>Upload file: <input type="file" name="doc"></label></p>
+          <p><label>Comments:<br><textarea name="comments" rows="3" cols="40"></textarea></label></p>
+          <input type="hidden" name="source" value="tags-page">
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 S. Guna Naveen Sidhardha</p>
+  </footer>
+</body>
+</html>

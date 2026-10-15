@@ -1,0 +1,16 @@
+{
+  "name": "event-registration-api",
+  "version": "1.0.0",
+  "description": "RESTful API for college event registrations with seat limits and a waitlist (Express + MongoDB)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seed.js",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^7.6.3"
+  }
+}

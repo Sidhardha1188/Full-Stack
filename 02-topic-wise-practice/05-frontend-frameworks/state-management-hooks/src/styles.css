@@ -1,0 +1,22 @@
+body { margin: 0; font-family: "Trebuchet MS", sans-serif; background: #1b263b; color: #e0e1dd; }
+.quiz { max-width: 640px; margin: 0 auto; padding: 30px 20px; }
+h1 { color: #ffd166; }
+.screen, .card { background: #253552; padding: 20px; border-radius: 8px; }
+.card h2 { font-size: 1.15rem; margin-top: 0; }
+.options { display: grid; gap: 10px; }
+.option { text-align: left; padding: 12px; background: #31446b; color: #e0e1dd; border: 2px solid transparent; border-radius: 6px; font: inherit; cursor: pointer; }
+.option:hover:not(:disabled) { border-color: #ffd166; }
+.option.correct { background: #2a7a4b; }
+.option.wrong { background: #9b2c2c; }
+.option:disabled { cursor: default; }
+.primary { margin-top: 16px; padding: 10px 24px; background: #ffd166; color: #1b263b; border: none; border-radius: 6px; font: inherit; font-weight: bold; cursor: pointer; }
+.primary:disabled { opacity: 0.4; cursor: not-allowed; }
+.progress { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.timer { flex: 1; height: 8px; background: #31446b; border-radius: 4px; overflow: hidden; }
+.fill { height: 100%; background: #06d6a0; transition: width 1s linear; }
+.fill.urgent { background: #ef476f; }
+.urgent-text { color: #ef476f; font-weight: bold; }
+.review { padding-left: 20px; }
+.review li { margin-bottom: 10px; }
+.review .ok small { color: #06d6a0; }
+.review .bad small { color: #ef476f; }

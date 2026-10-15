@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Palatino Linotype", Palatino, serif; background: #fbf7ef; color: #2b2320; }
+
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 5%; background: #7a2e1e; }
+.brand { color: #fff3e0; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
+.nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
+.nav a { color: #fff3e0; text-decoration: none; }
+.nav ul a:hover { border-bottom: 2px solid #f2b950; }
+
+.banner {
+  min-height: 300px; display: flex; align-items: center; padding: 0 5%;
+  background:
+    repeating-linear-gradient(170deg, rgba(255,255,255,0.06) 0 12px, transparent 12px 24px),
+    linear-gradient(120deg, #7a2e1e, #c2632f 60%, #f2b950);
+  color: #fff;
+}
+.banner-text { max-width: 560px; }
+.banner h1 { font-size: 2.3rem; margin: 0 0 10px; line-height: 1.2; }
+
+main { padding: 20px 5% 40px; }
+h2 { color: #7a2e1e; font-size: 1.7rem; border-bottom: 2px solid #e6d3b8; padding-bottom: 6px; }
+
+.trips { display: flex; flex-direction: column; gap: 18px; }
+.trip { display: flex; background: #fff; border: 1px solid #e6d3b8; }
+.trip-art { flex: 0 0 200px; min-height: 150px; }
+.trip-info { padding: 14px 18px; }
+.trip-info h3 { margin: 0 0 6px; }
+.meta { color: #8a6f5a; font-style: italic; margin: 0; }
+.papikondalu { background: linear-gradient(#a8d3c4 0 45%, #3b7a68 45% 70%, #2f6b8f 70%); }
+.konaseema   { background: linear-gradient(#f6e3a1 0 40%, #6f9e3d 40% 75%, #4d8fac 75%); }
+.srisailam   { background: linear-gradient(#f2c38a 0 50%, #8a5a36 50% 80%, #4a3a2c 80%); }
+.horsley     { background: linear-gradient(#cfdde8 0 35%, #7f9a6f 35% 80%, #56704b 80%); }
+
+.season table { border-collapse: collapse; width: 100%; max-width: 700px; background: #fff; }
+.season th, .season td { border: 1px solid #e6d3b8; padding: 8px 12px; text-align: left; }
+.season th { background: #f3e6d1; }
+.season tr:nth-child(even) td { background: #fdf8f0; }
+
+.enquire form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 700px; }
+.enquire input, .enquire select, .enquire textarea { padding: 10px; border: 1px solid #c9b195; font-family: inherit; font-size: 1rem; }
+.enquire textarea { grid-column: 1 / -1; }
+.enquire button { grid-column: 1 / -1; justify-self: start; padding: 10px 24px; background: #7a2e1e; color: #fff; border: none; font-family: inherit; font-size: 1rem; cursor: pointer; }
+.enquire button:hover { background: #5c2216; }
+
+.foot { text-align: center; padding: 18px; background: #2b2320; color: #e6d3b8; }
+
+@media (max-width: 650px) {
+  .nav { flex-direction: column; gap: 10px; }
+  .trip { flex-direction: column; }
+  .trip-art { flex-basis: 120px; }
+  .enquire form { grid-template-columns: 1fr; }
+  .banner h1 { font-size: 1.7rem; }
+}
