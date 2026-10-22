@@ -46,3 +46,4 @@ IA-1 and IA-2 are added after each exam.
 ## Tools
 HTML5, CSS3, JavaScript, Node.js, Express, MongoDB, Mongoose, React 18, Vite, Git
 # Full-Stack
+# Full-Stack
