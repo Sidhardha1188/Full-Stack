@@ -1,0 +1,3 @@
+import { Heart, MapPin } from "lucide-react";
+import { useApp } from "../context/AppContext";
+export default function PlaceCard({place}){const {addFavourite,favourites}=useApp();const saved=favourites.some(f=>f.id===place.id);return <article className="place-card"><div className="image-wrap"><img src={place.image} alt={place.name}/><span className="category">{place.category}</span></div><div className="card-body"><h3>{place.name}</h3><p className="location"><MapPin size={15}/>{place.location}</p><p>{place.description}</p><button className={saved?"btn saved":"btn primary"} onClick={()=>addFavourite(place)}><Heart size={17} fill={saved?"currentColor":"none"}/>{saved?"Saved":"Save place"}</button></div></article>}

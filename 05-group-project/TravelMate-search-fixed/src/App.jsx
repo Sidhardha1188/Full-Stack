@@ -1,0 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"; import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./pages/Home"; import Login from "./pages/Login"; import Register from "./pages/Register"; import Dashboard from "./pages/Dashboard"; import Explore from "./pages/Explore"; import MapPage from "./pages/MapPage"; import Planner from "./pages/Planner"; import Profile from "./pages/Profile";
+const Protected=({children})=><ProtectedRoute>{children}</ProtectedRoute>;
+export default function App(){return <Routes><Route element={<Layout/>}><Route path="/" element={<Home/>}/><Route path="/login" element={<Login/>}/><Route path="/register" element={<Register/>}/><Route path="/explore" element={<Explore/>}/><Route path="/map" element={<MapPage/>}/><Route path="/planner" element={<Protected><Planner/></Protected>}/><Route path="/dashboard" element={<Protected><Dashboard/></Protected>}/><Route path="/profile" element={<Protected><Profile/></Protected>}/><Route path="*" element={<Home/>}/></Route></Routes>}

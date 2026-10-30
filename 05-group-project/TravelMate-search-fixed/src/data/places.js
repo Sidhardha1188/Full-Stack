@@ -1,0 +1,10 @@
+export const places = [
+  {id:"goa",name:"Goa Coast",location:"Goa, India",category:"Beach",description:"Golden beaches, colourful markets and relaxed coastal days.",image:"https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80"},
+  {id:"manali",name:"Manali",location:"Himachal Pradesh, India",category:"Mountains",description:"Snowy peaks, pine valleys and mountain adventures.",image:"https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=80"},
+  {id:"hampi",name:"Hampi",location:"Karnataka, India",category:"Historical",description:"Ancient ruins and boulder landscapes full of stories.",image:"https://images.unsplash.com/photo-1600100397608-f010f78d7b0e?auto=format&fit=crop&w=1000&q=80"},
+  {id:"rishikesh",name:"Rishikesh",location:"Uttarakhand, India",category:"Adventure",description:"Rafting, yoga and river views at the Himalayan foothills.",image:"https://images.unsplash.com/photo-1603867106100-0d2039fc8751?auto=format&fit=crop&w=1000&q=80"},
+  {id:"jaipur",name:"Jaipur",location:"Rajasthan, India",category:"City",description:"Pink architecture, royal forts and lively bazaars.",image:"https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1000&q=80"},
+  {id:"andaman",name:"Andaman Islands",location:"Andaman & Nicobar, India",category:"Beach",description:"Clear water, coral reefs and quiet island escapes.",image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"},
+  {id:"ladakh",name:"Ladakh",location:"Ladakh, India",category:"Mountains",description:"High-altitude roads, blue lakes and dramatic landscapes.",image:"https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=1000&q=80"},
+  {id:"varanasi",name:"Varanasi",location:"Uttar Pradesh, India",category:"Historical",description:"Sacred ghats, old lanes and unforgettable river mornings.",image:"https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1000&q=80"}
+];
